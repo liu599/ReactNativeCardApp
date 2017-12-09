@@ -1,0 +1,182 @@
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"name":"1"}
+
+<> 2017-12-06T115712.200.txt
+
+###
+
+POST http://localhost:3090/addDesk?name=1
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+<> 2017-12-06T115701.400.html
+
+###
+
+POST http://localhost:3090/addDesk?name=1
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2017-12-06T115353.415.html
+
+###
+
+POST http://localhost:3090/addDesk?name=1
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2017-12-06T115323.415.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2017-12-06T115309.415.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{"name":"1"}
+
+<> 2017-12-06T115254.200.txt
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{"name":"1"}
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{"name":"1"}
+
+<> 2017-12-06T115022.200.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{"title": "123"}
+
+<> 2017-12-06T114729.200.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{     "title": "123",     "questions": []  }
+
+<> 2017-12-06T114517.200.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{     "title": "123",     "questions": []  }
+
+<> 2017-12-06T114443.200.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{     "title": "123",     "questions": [], }
+
+<> 2017-12-06T114346.200.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{     "title": "123",     "questions": [], }
+
+<> 2017-12-06T114052.200.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{     "title": "123",     "questions": [], }
+
+<> 2017-12-06T113731.200.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{     "title": "123",     "questions": [], }
+
+<> 2017-12-06T113710.500.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{     "title": "123",     "questions": [], }
+
+<> 2017-12-06T113647.500.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{     "title": "cccc",     "questions": [{                         question: 'What is React?',                         answer: 'A library for managing user interfaces'                       },                       {                         question: 'Where do you make Ajax requests in React?',                         answer: 'The componentDidMount lifecycle event'                       }] }
+
+<> 2017-12-06T113543.500.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{     "title": "cccc",     "questions": [{                         question: 'What is React?',                         answer: 'A library for managing user interfaces'                       },                       {                         question: 'Where do you make Ajax requests in React?',                         answer: 'The componentDidMount lifecycle event'                       }] }
+
+<> 2017-12-06T113508.200.html
+
+###
+
+POST http://localhost:3090/addDesk
+Accept:*/*
+Cache-Control:no-cache
+
+{     "title": "cccc",     "questions": [{                         question: 'What is React?',                         answer: 'A library for managing user interfaces'                       },                       {                         question: 'Where do you make Ajax requests in React?',                         answer: 'The componentDidMount lifecycle event'                       }] }
+
+<> 2017-12-06T113304.200.html
+
+###
+
