@@ -10,13 +10,14 @@ class CardEdit extends Component {
     question: '',
     answer: '',
     data: '',
+    returnId: '',
   };
   
-  navigateToMain = (navigate) => {
+  navigateToDisplay = (navigate) => {
     navigate(
-      'DeckMain',
+      'QuizCover',
       {
-        index: 0,
+        deckData: this.state.data[this.state.returnId],
       }
     )
   };
@@ -24,21 +25,21 @@ class CardEdit extends Component {
   addCard = (navigate) => {
     let id;
     if (this.props.navigation.state.params.lastId) {
-      console.log('Add Card To Existing');
       id = this.props.navigation.state.params.lastId;
-      Nekohand.fetchDecks().then(res => {
-        let data = JSON.parse(res);
-        data[this.props.navigation.state.params.deckData.id].questions.push({
-          id,
+      Nekohand.writeQuestion({
+          id: id + 1,
           pid: this.props.navigation.state.params.deckData.id,
           question: this.state.question,
           answer: this.state.answer,
-        });
-        return data;
-      }).then((data) => {
-        return Nekohand.writeDatabaseForQuestion(data, this.props.navigation.state.params.deckData.id);
-      }).then(() => {
-        this.navigateToMain(navigate);
+        }, this.props.navigation.state.params.deckData.id).then(() => {
+          Nekohand.fetchDecks().then(data => {
+            this.setState({
+              data: JSON.parse(data),
+              returnId: this.props.navigation.state.params.deckData.id,
+            })
+          }).then(() => {
+            this.navigateToDisplay(navigate);
+          });
       });
     } else {
       id = this.props.navigation.state.params.id + 1;
@@ -52,7 +53,14 @@ class CardEdit extends Component {
           answer: this.state.answer,
         }],
       }).then(() => {
-        this.navigateToMain(navigate);
+        Nekohand.fetchDecks().then(data => {
+          this.setState({
+            data: JSON.parse(data),
+            returnId: id,
+          })
+        }).then(() => {
+          this.navigateToDisplay(navigate);
+        });
       });
     }
     

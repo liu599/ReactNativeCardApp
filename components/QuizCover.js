@@ -12,20 +12,21 @@ class QuizCover extends Component {
     
     return (
       <View>
-        <Text style={styles.DeckMainStyle.appName}>{params.deckTitle}</Text>
-        
+        <Text style={styles.DeckMainStyle.appName}>{params.deckData.title}</Text>
+        <Text style={styles.DeckMainStyle.title}>{params.deckData.questions.length} cards inside.</Text>
+        <Text style={styles.DeckMainStyle.title}></Text>
         <Button
           style={styles.DeckEditStyle.button}
           onPress={() => navigate(
             'QuizDisplay',
             { deckData: params.deckData, questionIndex: 0, score: 0 }
           )}
-          title="Start Memory!" />
+          title="Start Quiz" />
         <Button
           style={styles.DeckEditStyle.button}
           onPress={() => navigate(
             'CardEdit',
-            { deckData: params.deckData, lastId: params.lastId }
+            { deckData: params.deckData, lastId: params.deckData.id }
           )}
           title="Add card for this deck" />
         <Button

@@ -9,9 +9,11 @@ class QuizDisplay extends Component {
     const { navigate } = this.props.navigation;
     const { params } = this.props.navigation.state;
     const currentIndex = params.questionIndex;
+    // console.log(params.deckData.questions[currentIndex], currentIndex);
     
     return (
       <View>
+        <Text style={styles.DeckMainStyle.title}>{params.deckData.questions.length - currentIndex - 1} / {params.deckData.questions.length} remaining</Text>
         <Text style={styles.DeckMainStyle.appName}>{params.deckData.questions[currentIndex].question}</Text>
         <FlipCard
           perspective={1000}

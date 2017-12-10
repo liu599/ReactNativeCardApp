@@ -47,7 +47,6 @@ export async function setDecks(data) {
 
 export async function fetchDecks() {
   return AsyncStorage.getItem(STORAGE_KEY).then(res => {
-    console.log('11111111111111111111', res);
     return res;
   });
 }
@@ -73,20 +72,16 @@ export async function writeDatabase (contentObj) {
     return data;
   }).then((data) => {
     return setDecks(data)
-  }).then((data) => {
-    console.log('dddd', data);
   });
 }
 
-export async function writeDatabaseForQuestion(questionObj, index) {
+export async function writeQuestion(questionObj, index) {
   return fetchDecks().then(res => {
     const data = JSON.parse(res);
     data[index].questions.push(questionObj);
     return data;
   }).then((data) => {
     return setDecks(data)
-  }).then((data) => {
-    console.log('dddd', data);
   });
 }
 

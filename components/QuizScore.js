@@ -14,9 +14,17 @@ class QuizScore extends Component {
         <Button
           style={styles.DeckEditStyle.button}
           onPress={() => navigate(
-            'DeckMain'
+            'QuizDisplay',
+            { deckData: params.deckData, questionIndex: 0, score: 0 }
           )}
-          title="Back" />
+          title="Restart Quiz" />
+        <Button
+          style={styles.DeckEditStyle.button}
+          onPress={() => navigate(
+            'QuizCover',
+            { deckData: params.deckData }
+          )}
+          title="Back to Deck" />
       </View>
     );
   }
