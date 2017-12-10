@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="00a1b19c-ca25-45bd-a49f-29f03e1ab4ad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/components/CardEdit.js" afterPath="$PROJECT_DIR$/components/CardEdit.js" />
-      <change beforePath="$PROJECT_DIR$/components/QuizCover.js" afterPath="$PROJECT_DIR$/components/QuizCover.js" />
-      <change beforePath="$PROJECT_DIR$/components/QuizDisplay.js" afterPath="$PROJECT_DIR$/components/QuizDisplay.js" />
-      <change beforePath="$PROJECT_DIR$/components/QuizScore.js" afterPath="$PROJECT_DIR$/components/QuizScore.js" />
-      <change beforePath="$PROJECT_DIR$/utils/api.js" afterPath="$PROJECT_DIR$/utils/api.js" />
+      <change beforePath="$PROJECT_DIR$/components/DeckMain.js" afterPath="$PROJECT_DIR$/components/DeckMain.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,11 +70,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuizScore.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuizScore.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/QuizScore.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
               <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeckMain.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/DeckMain.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-53">
+              <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -133,7 +139,6 @@
         <option value="$PROJECT_DIR$/components/DeckMainStyle.js" />
         <option value="$PROJECT_DIR$/utils/icons.js" />
         <option value="$PROJECT_DIR$/components/QuizDisplayStyle.js" />
-        <option value="$PROJECT_DIR$/components/DeckMain.js" />
         <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/components/QuizScore.js" />
@@ -141,6 +146,7 @@
         <option value="$PROJECT_DIR$/utils/api.js" />
         <option value="$PROJECT_DIR$/components/CardEdit.js" />
         <option value="$PROJECT_DIR$/components/QuizDisplay.js" />
+        <option value="$PROJECT_DIR$/components/DeckMain.js" />
       </list>
     </option>
   </component>
@@ -552,12 +558,12 @@
       <workItem from="1512846012250" duration="974000" />
       <workItem from="1512883364773" duration="642000" />
       <workItem from="1512889469303" duration="328000" />
-      <workItem from="1512910022161" duration="4363000" />
+      <workItem from="1512910022161" duration="5232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78362000" />
+    <option name="totallyTimeSpent" value="79231000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -736,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/DeckMain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/QuizDisplayStyle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -822,6 +821,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/DeckMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
           <folding />
         </state>
       </provider>

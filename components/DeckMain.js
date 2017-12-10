@@ -49,20 +49,26 @@ class DeskMain extends React.Component {
     
     return (
       <View>
-        <Text style={styles.DeckMainStyle.appName}>Memory App</Text>
         <FlatList
           data={this.state.database}
           renderItem={({ item }) => this.renderItem({ item })}
           keyExtractor={(item, index) => index}
+          ListHeaderComponent={() => {
+            return (<Text style={styles.DeckMainStyle.appName}>Memory App</Text>);
+          }}
+          ListFooterComponent={() => {
+            return (
+              <TouchableOpacity
+                style={styles.DeckMainStyle.container}
+                onPress={() => navigate(
+                  'DeckEdit'
+                )}
+              >
+                <Text style={styles.DeckMainStyle.title}>Add a new deck</Text>
+              </TouchableOpacity>
+            );
+          }}
         />
-        <TouchableOpacity
-          style={styles.DeckMainStyle.container}
-          onPress={() => navigate(
-            'DeckEdit'
-          )}
-        >
-          <Text style={styles.DeckMainStyle.title}>Add a new deck</Text>
-        </TouchableOpacity>
       </View>
     );
   }
